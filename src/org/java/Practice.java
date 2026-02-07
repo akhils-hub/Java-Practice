@@ -1,24 +1,29 @@
 package org.java;
 
-import java.util.LinkedHashSet;
+import java.util.LinkedHashMap;
 
 public class Practice {
 
-	//palindrome string is a sequence of characters that reads the same backward as it does forward
+	//Occurance of each element in a given String
 	public static void main(String[] args) {
-		String s = "Madam".toLowerCase();
-		boolean isPalindrome = true;
-		
-        StringBuilder sb = new StringBuilder(s);
-        String reverse = sb.reverse().toString();
-        
-		if(s.equalsIgnoreCase(reverse)) {
-			System.out.println("\"" + s + "\" is a palindrome");
-		}else {
-			System.out.println("\"" + s + "\" is not a palindrome");
+		String s = "akhilbabu".toLowerCase();
+
+		LinkedHashMap<Character,Integer> map = new LinkedHashMap<>();
+
+		for(int i=0;i<s.length();i++) {
+			char key = s.charAt(i);
+			map.put(key, map.getOrDefault(key, 0)+1);
 		}
 
+		System.out.println(map.toString());
 
+		for (char ch:map.keySet()) {
+			System.out.println(ch+ " --> " + map.get(ch));
+		}
 	}
 
 }
+
+
+// map.get(key); -- used to retrive the value associate with a specific key.
+// if 'key' does not exist in the map, it will return NULL.
