@@ -1,8 +1,8 @@
-package org.java;
+package org.string_programs;
 
-public class Practice {
+public class Swap_Two_Strings {
+
 	//Swap Two Strings
-
 	public static void main(String[] args) {
 
 		String s1 = "akhil";
@@ -39,4 +39,5 @@ public class Practice {
 		System.out.println("s1 is: \""  + s1+ "\" and s2 is: \"" + s2 +"\"");
 
 	}
+
 }
