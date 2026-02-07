@@ -1,6 +1,6 @@
-package org.java;
+package org.string_programs;
 
-public class Practice {
+public class Remove_Special_Characters {
 	//Remove Special Characters in a given String.
 	public static void main(String[] args) {
 		String s = "Akhilbabu123@#$%^456";
@@ -11,5 +11,4 @@ public class Practice {
 		//	String onlySP = s.replaceAll("[a-zA-Z0-9]","");
 		//	System.out.println(onlySP);
 	}
-
 }
