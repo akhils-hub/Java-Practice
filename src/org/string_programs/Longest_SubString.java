@@ -1,9 +1,8 @@
-package org.java;
+package org.string_programs;
 
 import java.util.LinkedHashMap;
 
-public class Practice {
-
+public class Longest_SubString {
 	//Longest SubString without repeating duplicate characters.
 	public static void main(String[] args) {
 		String s = "abdacbabcd";
