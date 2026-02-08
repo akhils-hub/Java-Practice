@@ -31,8 +31,9 @@ public class Longest_SubString {
 
 		}
 
-		System.out.println(longestS.replaceAll("[^a-z]", ""));
-
+		System.out.println("Longest SubString without repeating char: " + longestS.replaceAll("[^a-z]", ""));
+        System.out.println("Longest SubString Length: " + longestL);
+		
 		StringBuilder sb = new StringBuilder();
 		for(int i=0;i<longestS.length();i++) {
 			char ch = longestS.charAt(i);
