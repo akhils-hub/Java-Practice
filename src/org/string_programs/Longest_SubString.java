@@ -42,7 +42,7 @@ public class Longest_SubString {
 			}
 		}
 
-		System.out.println(sb.toString());
+		System.out.println("Longest SubString without repeating char: " +sb.toString());
 
 	}
 
