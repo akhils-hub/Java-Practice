@@ -1,9 +1,8 @@
-package org.java;
+package org.string_programs;
 
 import java.util.TreeSet;
 
-public class Practice {
-
+public class Find_Duplicate_Characters {
 	//Find Duplicate Characters
 	public static void main(String[] args) {
 		String s = "akhil babu malapolu";
@@ -19,7 +18,7 @@ public class Practice {
 			}
 			if(isDuplicate) {
 				//System.out.print(s.charAt(i) + " ");
-				
+
 				set.add(s.charAt(i));
 				isNotDuplicate = false;
 			}
@@ -33,7 +32,6 @@ public class Practice {
 		if(isNotDuplicate) {
 			System.out.println("There is not duplicate charactes!");
 		}
-		
-	}
 
+	}
 }
