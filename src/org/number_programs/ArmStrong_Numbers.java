@@ -1,7 +1,6 @@
-package org.java;
+package org.number_programs;
 
-public class Practice {
-
+public class ArmStrong_Numbers {
 	public static boolean isArmStrongNumber(int num) {
 		int digits = 0;
 		int sum =0;
@@ -40,5 +39,4 @@ public class Practice {
 			}
 		}
 	}
-
 }
