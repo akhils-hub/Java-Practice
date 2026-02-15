@@ -39,4 +39,5 @@ public class ArmStrong_Numbers {
 			}
 		}
 	}
+
 }
