@@ -1,37 +1,25 @@
 package org.java;
 
-import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedHashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.stream.IntStream;
 
 public class Practice {
-    public static void main(String[] args) {
-        
-        int[] a = {1, 2, 3, 3, 1, 2, 3, 4, 5};
-        // This array keeps track of which elements we have already counted
-        boolean[] visited = new boolean[a.length];
-        
-        for (int i = 0; i < a.length; i++) {
-            
-            // Skip this element if we have already counted it in a previous iteration
-            if (visited[i] == true) {
-                continue;
-            }
+	public static void main(String[] args) {
+		 int[] a = {1, 5, 1, 4, 8, 8, 8, 1};
+		 
+		
+		for(int i=0;i<a.length;i++) {
 
-            int count = 1;
-            for (int j = i + 1; j < a.length; j++) {
-                // If we find a match...
-                if (a[i] == a[j]) {
-                    // Mark the duplicate as visited so the outer loop skips it later
-                    visited[j] = true;
-                    count++;
-                }
-            }
-            
-            // Print the result for this unique element
-            System.out.println(a[i] + " --> " + count);
-        }
-    }
+			int count = 1;
+			for(int j=0;j<a.length;j++) {
+				if(a[i] == a[j] && i!=j) {
+					
+					
+					count++;
+				}
+			}
+			if(count >= 1)
+			System.out.println(a[i]+" --> " + count);
+		}
+	}
 }
