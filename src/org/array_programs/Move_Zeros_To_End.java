@@ -2,8 +2,6 @@ package org.array_programs;
 
 import java.util.Arrays;
 
-import org.java.Practice;
-
 public class Move_Zeros_To_End {
 
     public static void main(String[] args) {
