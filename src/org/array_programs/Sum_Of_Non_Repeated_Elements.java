@@ -1,9 +1,7 @@
-package org.java;
+package org.array_programs;
 
-import java.util.Arrays;
-
-public class Practice {
-    public static void main(String[] args) {
+public class Sum_Of_Non_Repeated_Elements {
+public static void main(String[] args) {
         
         int[] a = {1, 2, 3, 3, 1, 2, 3, 4, 5};
         int sum  = 0;
@@ -24,11 +22,11 @@ public class Practice {
             
             // If count remains 0, it means no duplicates were found for a[i]
             if (count == 0) {
-                System.out.println("First Non-Repeated Element: " + a[i]);
+               // System.out.println("First Non-Repeated Element: " + a[i]);
                 
                sum = sum + a[i];
             }
         }
-        System.out.println(sum);
+        System.out.println("Sum Of Non Repeated Elements: "+sum);
     }
 }
