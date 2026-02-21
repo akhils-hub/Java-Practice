@@ -3,32 +3,46 @@ package org.java;
 import java.util.Arrays;
 
 public class Practice {
-    public static void main(String[] args) {
-        
-        int[] a = {1, 2, 3, 3, 1, 2, 3, 4, 5};
-        int sum  = 0;
-        // Outer loop: Pick each element one by one
-        for (int i = 0; i < a.length; i++) {
-            int count = 0;
-            
-            // Inner loop: Compare the picked element with every other element in the array
-            for (int j = 0; j < a.length; j++) {
-                
-                // Check if values match AND ensure we aren't comparing the element to itself (i != j)
-                if (a[i] == a[j] && i != j) {
-                    count++;
-                    // Optimization: We found a duplicate, so we can stop checking the inner loop
-                    break; 
-                }
-            }
-            
-            // If count remains 0, it means no duplicates were found for a[i]
-            if (count == 0) {
-                System.out.println("First Non-Repeated Element: " + a[i]);
-                
-               sum = sum + a[i];
-            }
-        }
-        System.out.println(sum);
-    }
-}
+	    public static void main(String[] args) {
+	       int row=4;
+	       
+	       for(int i=0;i<row;i++) {
+	    	  
+	    	   for(int j=0;j<=i;j++) {
+	    		   System.out.print("*");
+	    	   }
+	    	   for(int j=i;j<row-1;j++) {
+	    		   System.out.print(" ");
+	    	   }
+	    	   for(int j=i;j<row-1;j++) {
+	    		   System.out.print(" ");
+	    	   }
+	    	   for(int j=0;j<=i;j++) {
+	    		   System.out.print("*");
+	    	   }
+	    	   
+	    	   
+	    	   System.out.println();
+	       }
+	       
+	       for(int i=1;i<row;i++) {
+		    	  
+		    	  for(int j=i;j<row;j++) {
+		    		  System.out.print("*");
+		    	  }
+		    	  for(int j=0;j<i;j++) {
+		    		  System.out.print(" ");
+		    	  }
+		    	  
+		    	  for(int j=0;j<i;j++) {
+		    		  System.out.print(" ");
+		    	  }
+		    	  for(int j=i;j<row;j++) {
+		    		  System.out.print("*");
+		    	  }
+		    	  System.out.println();
+		      }
+	  
+	    }
+	}
+
