@@ -3,7 +3,7 @@ package org.array_programs;
 public class InterSection_Array {
     //  between two arrays by comparing every element of the first array against every element of the second.
     public static void main(String[] args) {
-        int[] a1 = { 1, 2, 3, 4, 5 };
+        int[] a1 = { 1, 2, 3, 4, 5,4 };
         int[] a2 = { 4, 5, 6, 7, 8 };
 
         // Outer loop: Iterate through each element of the first array

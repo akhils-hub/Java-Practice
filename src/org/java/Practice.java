@@ -2,47 +2,34 @@ package org.java;
 
 import java.util.Arrays;
 
+// Intersection
 public class Practice {
-	    public static void main(String[] args) {
-	       int row=4;
-	       
-	       for(int i=0;i<row;i++) {
-	    	  
-	    	   for(int j=0;j<=i;j++) {
-	    		   System.out.print("*");
-	    	   }
-	    	   for(int j=i;j<row-1;j++) {
-	    		   System.out.print(" ");
-	    	   }
-	    	   for(int j=i;j<row-1;j++) {
-	    		   System.out.print(" ");
-	    	   }
-	    	   for(int j=0;j<=i;j++) {
-	    		   System.out.print("*");
-	    	   }
-	    	   
-	    	   
-	    	   System.out.println();
-	       }
-	       
-	       for(int i=1;i<row;i++) {
-		    	  
-		    	  for(int j=i;j<row;j++) {
-		    		  System.out.print("*");
-		    	  }
-		    	  for(int j=0;j<i;j++) {
-		    		  System.out.print(" ");
-		    	  }
-		    	  
-		    	  for(int j=0;j<i;j++) {
-		    		  System.out.print(" ");
-		    	  }
-		    	  for(int j=i;j<row;j++) {
-		    		  System.out.print("*");
-		    	  }
-		    	  System.out.println();
-		      }
-	  
-	    }
+	
+	
+	public static void main(String[] args) {
+
+		 int[] a1 = { 1, 2, 3, 4, 5,4 };
+	     int[] a2 = { 4, 5, 6, 7, 8 };
+		 
+		for(int i=0;i<a1.length;i++) {
+			
+			boolean common = false;
+			
+			for(int j=0;j<a2.length;j++) {
+				
+				if(a1[i] == a2[j]) {
+					
+					common = true;
+					
+				}
+				if(common) {
+					System.out.println(a2[j]);
+					break;
+				}
+			}
+			
+			
+		}
 	}
 
+}
