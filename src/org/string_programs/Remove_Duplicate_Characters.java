@@ -60,3 +60,62 @@ public class Remove_Duplicate_Characters {
 	}
 
  */
+
+
+
+/*
+ // Remove characters from String1 which characters present in String2
+public class Practice {
+
+	public static void main(String[] args) {
+		String s1 = "computer";
+		String s2 = "car";
+		String result = "";
+		
+		for(int i=0;i<s1.length();i++) {
+			boolean notFound = true;
+			
+			for(int j=0;j<s2.length();j++) {
+				
+				if(s1.charAt(i) == s2.charAt(j)) {
+					notFound = false;
+					break;
+				}
+			}
+			
+			if(notFound) {
+				result += s1.charAt(i);
+			}
+			
+		}
+		
+		System.out.println("After Removing Duplicate characters in String1 from String2: " + result);
+	}
+}
+
+ */
+
+
+
+
+/*
+ // Removing Duplicate Character in a given String!
+public class Practice {
+
+	public static void main(String[] args) {
+		String s = "akhilbabu";
+		String result = "";
+		for(int i=0;i<s.length();i++) {
+			char ch = s.charAt(i);
+
+			if(result.indexOf(ch) == -1) {
+				result += ch;
+			}
+			
+		}
+
+		System.out.println("Removing Duplicate char in String: " + result);
+	}
+}
+
+*/
