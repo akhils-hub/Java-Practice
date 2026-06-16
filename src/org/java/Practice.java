@@ -24,26 +24,27 @@ import java.util.Scanner;
  */
 public class Practice {
 
-	public static void main(String[] args) {
-	
-	Scanner sc = new Scanner(System.in);
-	
-	int passengers = 0;
-	
-	System.out.println("Enter No.of Stops in the bus: ?");
-	
-	int stops = sc.nextInt();
-	
-	for(int i=1;i<stops;i++) {
-		
-		System.out.println("Enter passengers are in at stop " + i);
-		int passIn = sc.nextInt();
-		System.out.println("Enter Passengers are out at stop " + i);
-		int passOut = sc.nextInt();
-		
-		passengers = passengers + passIn - passOut;
-	}
-	
-	System.out.println("Remaining Passengers in the bus: " + passengers);
-	}
-}
+	  public static void main(String[] args) {
+		   
+		    int[] a = {10,20,30,40,50,60,70,80,90};
+		    int first = 0;
+		    int last = a.length-1;
+		    
+		    int target = 60;
+		    int index = 0;
+		    
+		    while(first<=last){
+		        int mid = (first+last)/2;
+		        if(a[mid] == target){
+		            index = mid;
+		            break;
+		        }else if(target > a[mid]){
+		            first = mid+1;
+		        }else{
+		            last = mid-1;
+		        }
+		    }
+		    
+		    System.out.println("target found at: " + index);
+		   
+		    }}
