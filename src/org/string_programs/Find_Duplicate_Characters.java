@@ -35,3 +35,40 @@ public class Find_Duplicate_Characters {
 
 	}
 }
+
+
+
+/*
+
+
+ public static void main(String[] args) {
+		
+		String s = "akhilbabumalapolu";
+		boolean[] visit = new boolean[256];
+		boolean isNotDuplicated = true;
+		for(int i=0;i<s.length();i++) {
+			boolean isDuplicate = false;
+			for(int j=i+1;j<s.length();j++) {
+				
+				if(s.charAt(i) == s.charAt(j)) {
+					isDuplicate = true;
+					break;
+				}
+			}
+			if(visit[s.charAt(i)] == true) {
+				continue;
+			}
+			if(isDuplicate) {
+			//	set.add(s.charAt(i));
+				System.out.print(s.charAt(i));
+				isNotDuplicated = false;
+				visit[s.charAt(i)] = true;
+			}
+		}
+		if(isNotDuplicated) {
+		
+			System.out.println("There is no Duplicates in a given Stirng");
+		}
+		
+		
+*/
