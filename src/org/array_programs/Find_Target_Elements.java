@@ -1,5 +1,7 @@
 package org.array_programs;
 
+import java.util.LinkedHashMap;
+
 public class Find_Target_Elements {
     public static void main(String[] args) {
         int[] a = {1, 2, 3, 4, 5};
@@ -71,3 +73,25 @@ public class Find_Target_Elements {
 
 Requirement: This logic only works on sorted arrays. If the array were {4, 1, 6, 2, 3}, the pointers wouldn't know which way to move to find the target.
  */
+
+
+/*
+// This approach will work for unsorted arrays also.
+public class Practice {
+	public static void main(String[] args) {
+		int[] a = { 2, 5, 7, 8, 3, 4 };
+		int target = 9;
+		LinkedHashMap<Integer, Integer> map = new LinkedHashMap<>();
+
+		for (int num : a) {
+			int complement = target - num;
+			if (map.containsKey(complement)) {
+				System.out.println(complement + " " + num);
+			}
+			map.put(num, 1);
+		}
+	}
+}
+
+
+*/

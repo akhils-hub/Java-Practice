@@ -33,3 +33,40 @@ public class Occurance_Of_Each_Word {
         }
     }
 }
+
+
+/**
+ public class Practice {
+
+	public static void main(String[] args) {
+		String s = "Apples are apples Orange is green " + "nice taste Orange but color sun rise apples " + "Orange sun sun green green";
+		
+		String[] words = s.toLowerCase().split(" ");
+		boolean[] visit = new boolean[words.length];
+		for(int i=0;i<words.length;i++) {
+			
+		    String current = words[i];
+			int count = 1;
+			
+			//visit[i] == true: Checks if the word at the current loop index i has already been counted in a previous iteration.
+			if(visit[i] == true) {
+				continue;
+			}
+			
+			for(int j=1+i;j<words.length;j++) {
+			 if(current.equals(words[j])) {
+				 count++;
+				 
+				//• visit[j] = true: Marks the duplicate word found at index j as visited so it won't be counted again when the outer loop reaches it. 
+				visit[j] = true;
+			 }
+			}
+			
+			if(count >=1) {
+				System.out.println(current + " >>> " + count);
+			}
+		}
+	}
+}
+
+*/
