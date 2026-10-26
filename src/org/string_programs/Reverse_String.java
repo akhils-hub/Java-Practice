@@ -1,6 +1,7 @@
 package org.string_programs;
 
 import java.util.Scanner;
+import java.util.Stack;
 
 public class Reverse_String {
 public static void main(String[] args) {
@@ -37,6 +38,14 @@ public static void main(String[] args) {
 			start++; 
 			end--;
 		}
+		
+		//without using temp variable
+		while(start<end) {
+		ch[start] = (char) (ch[start] + ch[end]);
+		ch[end]  = (char)(ch[start] - ch[end]);
+		ch[start] = (char)(ch[start] - ch[end]);
+		start++;end--;
+	     }
 
 		StringBuilder reverse = new StringBuilder();
 
@@ -46,4 +55,23 @@ public static void main(String[] args) {
 
 		System.out.println("Reverse String: " + reverse.toString());		
 	} 
+ */
+
+
+
+/*
+ //Reverse String using Stack
+public static void main(String[] args) {
+	String s = "Akhil";
+	StringBuilder sb = new StringBuilder();
+	Stack<Character> st = new Stack<>();	
+	for(int i=0;i<s.length();i++) {
+		st.push(s.charAt(i));
+	}
+	while(!st.isEmpty()) {
+		sb.append(st.pop());
+		}
+	System.out.println(sb.toString());
+}
+
  */
