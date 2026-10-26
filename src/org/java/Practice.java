@@ -12,7 +12,7 @@ public class Practice {
 		}
 	}
 	public static void main(String[] args) {
-		String s = "I Love India";
+		String s = "I Love India akhil";
 		char[] ch = s.toCharArray();
 		int start = 0;
 		for (int i = 0; i <= ch.length; i++) {
