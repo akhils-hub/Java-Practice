@@ -22,7 +22,7 @@ public class Swap_Two_Strings {
 	public static void swap(String a, String b) {
 		a = a+b;
 		b = a.substring(0, a.length()-b.length());
-		a = a.substring(b.length());
+		a = a.substring(b.length()); // a = a.substring(b.length(),a.length());
 		System.out.println("After Swap:");
 		System.out.println("s1 is: \""  + a+ "\" and s2 is: \"" + b+"\"");
 
