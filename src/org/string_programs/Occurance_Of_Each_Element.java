@@ -2,7 +2,7 @@ package org.string_programs;
 
 import java.util.LinkedHashMap;
 
-public class Occurance_Of_Each_Element {
+public class Occurance_Of_Each_Character {
 	//Occurance of each element in a given String
 	public static void main(String[] args) {
 		String s = "akhilbabu".toLowerCase();
