@@ -81,3 +81,65 @@ public class Anagram_Check {
 	}
  
  */
+
+
+
+
+
+
+
+/*
+public class Practice {
+	public static boolean isCheck(String s1, String s2) {
+		char[] ch1 = s1.toCharArray();
+		char[] ch2 = s2.toCharArray();
+		int sum =0;
+		if(ch1.length != ch2.length) {
+			return false;
+		}
+		for(int i=0;i<ch1.length; i++) {
+			sum += ch1[i] - ch2[i];
+		}
+		return sum == 0;
+	}
+	public static void main(String[] args) {
+      String s1 = "listen";
+      String s2 = "silent";
+      
+      boolean check = isCheck(s1,s2);
+      System.out.println(check);
+	
+	}
+}
+
+ */
+
+
+
+/*
+
+	public static void main(String[] args) {
+      String s1 = "listen";
+      String s2 = "silent";
+      boolean isAnagram = true;
+      // Assuming standard ASCII characters (256 possibilities)
+      int[] charCount = new int[256];
+      
+      for(int i=0;i<s1.length();i++) {
+    	  charCount[s1.charAt(i)]++;
+    	  charCount[s2.charAt(i)]--;
+      }
+     for(int x: charCount) {
+    	 if(x != 0) {
+    		 isAnagram = false;
+    	 }
+     }
+     
+     if(isAnagram) {
+    	 System.out.println("Given Strings are Anagram.");
+     }else {
+    	 System.out.println("Given Strings are not Anagram.");
+     }
+	}
+
+*/
